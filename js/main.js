@@ -1,7 +1,6 @@
 function MainModule(listingsID = "#listings") {
   const me = {};
 
-
   const listingsElement = document.querySelector(listingsID);
 
   function getListingCode(listing) {
@@ -46,7 +45,6 @@ function MainModule(listingsID = "#listings") {
     const res = await fetch("./airbnb_sf_listings_500.json");
     const listings = await res.json();
 
-
     me.redraw(listings.slice(0, 50));
   }
 
@@ -58,5 +56,5 @@ function MainModule(listingsID = "#listings") {
 
 const main = MainModule();
 
-
 main.loadData();
+sdss;
